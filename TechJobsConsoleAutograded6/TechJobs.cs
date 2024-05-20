@@ -152,8 +152,6 @@ namespace TechJobsConsoleAutograded6
                         output.Append(nl);
                     }
                     output.Append(asterisks);
-                    // output.Append(nl);
-                    // output.Append(nl);
                 }
                 Console.WriteLine("" + output);
             }
