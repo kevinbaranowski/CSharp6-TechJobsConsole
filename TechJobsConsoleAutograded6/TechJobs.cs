@@ -148,9 +148,9 @@ namespace TechJobsConsoleAutograded6
                     output.Append(nl);
                     output.Append(asterisks);
                     output.Append(nl);
-                    foreach (KeyValuePair<string, string> element in job)
+                    foreach (KeyValuePair<string, string> kvp in job)
                     {
-                        output.Append(element.Key + ": " + element.Value);
+                        output.Append(kvp.Key + ": " + kvp.Value);
                         output.Append(nl);
                     }
                     output.Append(asterisks);

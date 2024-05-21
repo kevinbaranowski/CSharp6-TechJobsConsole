@@ -52,7 +52,7 @@ namespace TechJobsConsoleAutograded6
             {
                 foreach (KeyValuePair<string, string> kvp in job)
                 {
-                    if (kvp.Value.Contains(value))
+                    if (kvp.Value.ToLower().Contains(value.ToLower()))
                     {
                         if (jobs.Contains(job))
                         {
@@ -83,11 +83,11 @@ namespace TechJobsConsoleAutograded6
 
             foreach (Dictionary<string, string> row in AllJobs)
             {
-                string aValue = row[column];
+                string aValue = row[column].ToLower();
 
 
                 //TODO: Make search case-insensitive
-                if (aValue.Contains(value))
+                if (aValue.Contains(value.ToLower()))
                 {
                     jobs.Add(row);
                 }
